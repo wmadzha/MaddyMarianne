@@ -11,7 +11,7 @@ namespace MaddyMarianne.Commander.Commands
             return new CommandInput()
             {
                 Command = CommandTypes.Add,
-                CommandName = "Add",
+                CommandName = CommandNames.Add,
                 Inputs = InputBuilder.ToInputs(messages),
             };
         }

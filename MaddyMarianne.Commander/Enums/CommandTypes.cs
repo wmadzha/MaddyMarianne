@@ -8,5 +8,6 @@ namespace MaddyMarianne.Commander.Enums
         public const string Add = "-add";
         public const string NotValid = "notValid";
         public const string Help = "-help";
+        public const string Update = "-update";
     }
 }

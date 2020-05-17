@@ -10,7 +10,7 @@ namespace MaddyMarianne.Commander.Commands
             return new CommandInput()
             {
                 Command = CommandTypes.Delete,
-                CommandName = "Delete",
+                CommandName = CommandNames.Delete,
                 Inputs = InputBuilder.ToInputs(messages),
             };
         }

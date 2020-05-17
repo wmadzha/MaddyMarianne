@@ -12,7 +12,9 @@ namespace MaddyMarianne.Commander.Builders
         }
         public static CommandInput GetType(string[] commands , string message)
         {
-             switch(commands[1])
+            if(commands.Length <= 1)
+                return UnknownCommand.Generate(message);
+            switch (commands[1])
              {
                 case CommandTypes.Add:
                     return AddCommand.Generate(message);
@@ -22,6 +24,8 @@ namespace MaddyMarianne.Commander.Builders
                     return DeleteCommand.Generate(message);
                 case CommandTypes.Help:
                     return HelpCommand.Generate(message);
+                case CommandTypes.Update:
+                    return UpdateCommand.Generate(message);
                 default:
                     return UnknownCommand.Generate(message);
              }

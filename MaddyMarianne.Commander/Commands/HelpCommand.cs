@@ -12,7 +12,7 @@ namespace MaddyMarianne.Commander.Commands
             return new CommandInput()
             {
                 Command = CommandTypes.Help,
-                CommandName = "Help",
+                CommandName = CommandNames.Help,
                 Inputs = InputBuilder.ToInputs(messages),
             };
         }

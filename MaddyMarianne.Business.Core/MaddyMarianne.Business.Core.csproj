@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MaddyMarianne.Commander\MaddyMarianne.Commander.csproj" />
+    <ProjectReference Include="..\MaddyMarianne.DataAccess\MaddyMarianne.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

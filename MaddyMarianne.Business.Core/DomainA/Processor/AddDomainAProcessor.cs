@@ -14,8 +14,7 @@ namespace MaddyMarianne.Business.Core.DomainA.Processor
             this.CommandName = cmd.CommandName;
             this.Command = cmd.Command;
             this.Inputs = cmd.Inputs;
-            // if We Have DI then it will be better
-           
+            // if We Have DI then it will be better Since at MediatR we can reduce Dependency Injection
             _Engine = new DomainAEngine();
         }
         public override CommandResult Process()

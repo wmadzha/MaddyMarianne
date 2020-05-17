@@ -7,6 +7,10 @@ namespace MaddyMarianne.Business.Core.Router
     {
         public static CommandResult HelpCommand(ICommandInput cmd)
         {
+            if(cmd.Inputs.Count == 0)
+            {
+                return ResultBuilder.Build(cmd, "Unable To Process Help Command : Please include <domainname> that you would like to request help about", false, null);
+            }
             switch (cmd.Inputs["message_1"])
             {
                 case "DomainA":

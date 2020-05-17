@@ -1,8 +1,4 @@
-﻿using MaddyMarianne.Commander.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿using System.Collections.Generic;
 namespace MaddyMarianne.Commander.Models
 {
     public sealed class CommandInput

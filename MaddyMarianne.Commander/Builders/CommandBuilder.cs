@@ -14,13 +14,13 @@ namespace MaddyMarianne.Commander.Builders
         {
              switch(commands[1])
              {
-                case "-add":
+                case CommandTypes.Add:
                     return AddCommand.Generate(message);
-                case "-view":
+                case CommandTypes.View:
                     return ViewCommand.Generate(message);
-                case "-delete":
+                case CommandTypes.Delete:
                     return DeleteCommand.Generate(message);
-                case "-help":
+                case CommandTypes.Help:
                     return HelpCommand.Generate(message);
                 default:
                     return UnknownCommand.Generate(message);

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MaddyMarianne.Commander.Test
+namespace MaddyMarianne.Commander.Test.Builder
 {
     [TestClass]
     public class Builder_Test

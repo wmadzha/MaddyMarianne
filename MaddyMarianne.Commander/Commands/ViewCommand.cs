@@ -1,9 +1,6 @@
 ﻿using MaddyMarianne.Commander.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
 using MaddyMarianne.Commander.Enums;
+using MaddyMarianne.Commander.Builder;
 
 namespace MaddyMarianne.Commander.Commands
 {
@@ -13,9 +10,9 @@ namespace MaddyMarianne.Commander.Commands
         {
             return new CommandInput()
             {
-                Command = CommandTypes.Delete,
+                Command = CommandTypes.View,
                 CommandName = "View",
-                Inputs = null,
+                Inputs = InputBuilder.ToInputs(messages),
             };
         }
     }

@@ -1,9 +1,6 @@
 ﻿using MaddyMarianne.Commander.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
 using MaddyMarianne.Commander.Enums;
+using MaddyMarianne.Commander.Builder;
 
 namespace MaddyMarianne.Commander.Commands
 {
@@ -15,10 +12,7 @@ namespace MaddyMarianne.Commander.Commands
             {
                 Command = CommandTypes.Add,
                 CommandName = "Add",
-                 Inputs = new Dictionary<string, string>()
-                 {
-                     { "mesage" , messages }
-                 }
+                Inputs = InputBuilder.ToInputs(messages),
             };
         }
     }

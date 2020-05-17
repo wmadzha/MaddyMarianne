@@ -1,4 +1,5 @@
 ﻿using MaddyMarianne.Business.Model.DomainA;
+using System;
 using System.Collections.Generic;
 
 namespace MaddyMarianne.DataAccess.DomainA
@@ -35,7 +36,26 @@ namespace MaddyMarianne.DataAccess.DomainA
         }
         public List<DomainAExampleObject> GetAll()
         {
-            return new List<DomainAExampleObject>();
+            var result = new List<DomainAExampleObject>();
+            result.Add(new DomainAExampleObject()
+            {
+                DomainAName = "DomainA",
+                DomainANumbers = 1,
+                DomainAPrimaryKeyId = Guid.NewGuid()
+            });
+            result.Add(new DomainAExampleObject()
+            {
+                DomainAName = "DomainA",
+                DomainANumbers = 2,
+                DomainAPrimaryKeyId = Guid.NewGuid(),
+            });
+            result.Add(new DomainAExampleObject()
+            {
+                DomainAName = "DomainA",
+                DomainANumbers = 3,
+                DomainAPrimaryKeyId = Guid.NewGuid(),
+            });
+            return result;
         }
     }
 }

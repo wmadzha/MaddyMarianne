@@ -1,5 +1,5 @@
 # MaddyMarianne.Core
-An attempt to use MediatR for a CLI templates - Domain Driven Design
+An attempt to use MediatR for a CLI template - Domain Driven Design
 
 
 Milestone 1 - Generate Basic Operations

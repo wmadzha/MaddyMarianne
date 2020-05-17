@@ -9,17 +9,7 @@ namespace MaddyMarianne.Commander.Builders
     {
         public static CommandResult Build(ICommandInput input, bool isSuccess = true, Object objectResult = null)
         {
-            return new CommandResult()
-            {
-                Command = input.Command,
-                CommandName = input.CommandName,
-                CommandResultId = Guid.NewGuid(),
-                CommandTransactionId = input.CommandTransctionId,
-                IsContainException = false,
-                IsSuccess = isSuccess,
-                Message = string.Empty,
-                Result = objectResult
-            };
+            return Build(input, string.Empty, isSuccess, objectResult);
         }
         public static CommandResult Build(ICommandInput input ,string message, bool isSuccess = true, Object objectResult = null)
         {

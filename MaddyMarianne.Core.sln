@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaddyMarianne.DataAccess", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaddyMarianne.Business.ConsoleApp", "MaddyMarianne.Business.ConsoleApp\MaddyMarianne.Business.ConsoleApp.csproj", "{9CCEEB27-A445-4ADC-BEB8-627561B9EF21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaddyMarianne.Web.AspNetCore.Api", "MaddyMarianne.Web.AspNetCore.Api\MaddyMarianne.Web.AspNetCore.Api.csproj", "{7CDB521B-DF53-4E42-A4F3-8171E92480B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaddyMarianne.Web.AspNetCore.Api", "MaddyMarianne.Web.AspNetCore.Api\MaddyMarianne.Web.AspNetCore.Api.csproj", "{AACF5B50-F8C2-4E50-9910-CD497C58FEAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{9CCEEB27-A445-4ADC-BEB8-627561B9EF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CCEEB27-A445-4ADC-BEB8-627561B9EF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CCEEB27-A445-4ADC-BEB8-627561B9EF21}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7CDB521B-DF53-4E42-A4F3-8171E92480B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7CDB521B-DF53-4E42-A4F3-8171E92480B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7CDB521B-DF53-4E42-A4F3-8171E92480B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7CDB521B-DF53-4E42-A4F3-8171E92480B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AACF5B50-F8C2-4E50-9910-CD497C58FEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AACF5B50-F8C2-4E50-9910-CD497C58FEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AACF5B50-F8C2-4E50-9910-CD497C58FEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AACF5B50-F8C2-4E50-9910-CD497C58FEAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

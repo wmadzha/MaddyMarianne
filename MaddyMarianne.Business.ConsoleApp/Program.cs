@@ -12,9 +12,21 @@ namespace MaddyMarianne.Business.ConsoleApp
             {
                 Console.Write("YourCommand>");
                 var cmd = Console.ReadLine();
-                var result = cmdrouter.ProcessCommand(cmd);
-                Console.WriteLine(result.Message);
+                if(checkBasicCommandLine(cmd))
+                {
+                    var result = cmdrouter.ProcessCommand(cmd);
+                    Console.WriteLine(result.Message);
+                }
             }
+        }
+        static bool checkBasicCommandLine(string cmd)
+        {
+            bool shouldContinue = true;
+            if (cmd == "cls")
+            { Console.Clear(); shouldContinue = false; }
+            if (cmd == "exit")
+            { Environment.Exit(0); shouldContinue = false; }
+            return shouldContinue;
         }
     }
 }
